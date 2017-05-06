@@ -1,2 +1,2 @@
 # Information-Technology-Institute
-This is the official ITI Exams Control system 
+Information Technology Institute , Official Examination System and control and monitoring . System Include all system entities and possible interactions .

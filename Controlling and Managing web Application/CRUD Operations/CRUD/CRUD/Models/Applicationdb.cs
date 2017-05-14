@@ -8,7 +8,7 @@ namespace API_V1._0.Models
 {
     public class Applicationdb : DbContext
     {
-        public Applicationdb() :base("iti-exam_control")
+        public Applicationdb() :base("ITI")
         {
 
         }

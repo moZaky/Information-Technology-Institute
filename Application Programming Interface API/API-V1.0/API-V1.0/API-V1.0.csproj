@@ -180,9 +180,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201705120158511_mig1.cs" />
-    <Compile Include="Migrations\201705120158511_mig1.Designer.cs">
-      <DependentUpon>201705120158511_mig1.cs</DependentUpon>
+    <Compile Include="Migrations\201705141724508_mig1.cs" />
+    <Compile Include="Migrations\201705141724508_mig1.Designer.cs">
+      <DependentUpon>201705141724508_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Applicationdb.cs" />
@@ -192,6 +192,7 @@
     <Compile Include="Models\QuestionInExam.cs" />
     <Compile Include="Models\StudentAnswerQuestionInExam.cs" />
     <Compile Include="Models\StudentPermittedInExam.cs" />
+    <Compile Include="Models\StudentPostponedInExam.cs" />
     <Compile Include="Models\TopicInCourses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -254,8 +255,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705120158511_mig1.resx">
-      <DependentUpon>201705120158511_mig1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705141724508_mig1.resx">
+      <DependentUpon>201705141724508_mig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

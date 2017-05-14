@@ -16,22 +16,10 @@ namespace API_V1._0.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Exam>()
-                .HasMany(Ques => Ques.Questions)
-                .WithMany(ex => ex.Exams)
-                .Map(Table =>
-                {
-                    Table.MapLeftKey("Exam_Id");
-                    Table.MapRightKey("Ques_Id");
-                    Table.ToTable("QuestionInExam");
-                });
-
             modelBuilder.Entity<NonRightAnswersForQuestion>()
                 .HasRequired(Ques => Ques.Questions)
                 .WithMany(nra => nra.NonRightAnswersForQuestion)
                 .HasForeignKey(Qid => Qid.Ques_Id);
-
-
 
         }
 
@@ -41,6 +29,7 @@ namespace API_V1._0.Models
         public virtual DbSet<QuestionInExam> QuestionsInExam { get; set; }
         public virtual DbSet<StudentAnswerQuestionInExam> StudentsAnswerQuestionInExam { get; set; }
         public virtual DbSet<StudentPermittedInExam> StudentsPermittedInExam { get; set; }
+        public virtual DbSet<StudentPostponedInExam> StudenstPostponedInExam { get; set; }
 
     }
 }

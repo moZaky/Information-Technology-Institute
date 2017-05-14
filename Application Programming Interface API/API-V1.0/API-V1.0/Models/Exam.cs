@@ -12,6 +12,7 @@ namespace API_V1._0.Models
         public Exam()
         {
             Questions = new HashSet<Question>();
+            QuestionInExam = new HashSet<QuestionInExam>();
         }
 
         [Key]
@@ -24,5 +25,7 @@ namespace API_V1._0.Models
         public int Number_Of_Ques { get; set; }
         public string Ins_Id { get; set; }  // Id of instructor who add this question .
         public virtual ICollection<Question> Questions { get; set; }
+        public virtual ICollection<QuestionInExam> QuestionInExam { get; set; }
+
     }
 }
